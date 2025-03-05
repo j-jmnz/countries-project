@@ -1,0 +1,23 @@
+version: '3'
+services:
+    backend:
+        build:
+            context: ./countries-api
+            dockerfile: Dockerfile
+        ports:
+            - '3000:3000'
+        volumes:
+            - ./countries-api:/app
+            - /app/node_modules
+        command: pnpm run start:dev
+
+    frontend:
+        build:
+            context: ./countries-fe
+            dockerfile: Dockerfile
+        ports:
+            - '5173:5173'
+        volumes:
+            - ./countries-fe:/app
+            - /app/node_modules
+        command: pnpm run dev
