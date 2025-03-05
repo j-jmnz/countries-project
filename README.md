@@ -2,6 +2,9 @@
 
 A full-stack application for exploring countries data with a modern React frontend and NestJS backend.
 
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/9a97d343-a88b-41e5-97c2-dde19a0e2700" />
+
+
 ## Project Structure
 
 This project consists of two main components:
